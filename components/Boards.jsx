@@ -36,7 +36,7 @@ export default function Boards() {
                             <div>
                                 <div className='flex flex-row items-start  absolute gap-2.5 h-[72px] left-6'>
                                     <Image
-                                        src='/images/companylogo.png'
+                                        src='/v1687488876/companylogo_mrpni8.png'
                                         alt='logo'
                                         height={72}
                                         width={72}

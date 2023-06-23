@@ -11,7 +11,7 @@ export default function JobCard() {
                     <Image
                         priority
                         className='rounded-sm'
-                        src="/images/Rectangle4913.png"
+                        src="/v1687488875/Rectangle4913_sqbbcb.png"
                         width={24}
                         height={24}
                         alt="card img"

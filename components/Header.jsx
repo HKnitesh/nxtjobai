@@ -15,7 +15,7 @@ export default function Header() {
                     <Link href="/" className="h-full w-[139px] flex-none order-0 grow-0">
                         <Image
                             priority
-                            src="/images/Group1784.png"
+                            src="/v1687488875/Group1784_sxi8of.png"
                             width={139}
                             height={48}
                             alt="company logo"
