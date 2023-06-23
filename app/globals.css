@@ -1,27 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @tailwind base;
 @tailwind components;
+
+
+.header {
+  @apply bg-[#FFFFFF] left-0 right-0 top-0 bottom-0 shadow-1hd w-full h-full flex justify-center;
+}
+
+.sideBar {
+  @apply text-[#212121] w-48 h-14 rounded-lg flex items-center  hover:text-white hover:bg-[#8246FD] p-2.5 gap-2.5;
+}
+.btn{
+  @apply bg-[#FE5BAC] h-12 w-24 flex justify-center items-center font-inter font-semibold text-lg text-whiteF rounded-lg;
+}
+.button{
+  @apply flex justify-center items-center px-4 h-12 w-40 rounded-lg bg-[#8246FD] text-whiteF font-inter text-sm font-semibold;
+}
+.input{
+  @apply items-center px-4 h-12 text-sm border-[1px] border-solid border-[#DDDDDD] rounded-lg;
+}
+
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}

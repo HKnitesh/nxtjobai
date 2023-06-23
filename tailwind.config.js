@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -12,7 +13,31 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        '1hd': '0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)',
+        '2bx': '0px 1px 2px rgba(0, 0, 0, 0.05)',
+        '3bx': '0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        '4bx': '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        
+      },
+      fontFamily: {
+        'inter': ['Inter Nova','sans-serif'],
+      },
+      colors: {
+        'whiteF': '#FFFFFF',
+        'blackF': '#212121',
+        'gray500': '#AFAFAF',
+        'cream': '#F5F4F4',
+      },
+      animation: {
+        'dialog': 'overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
+      },
+      backdropBlur: {
+        xs: '2px',
+      },
+      
     },
+    
   },
   plugins: [],
 }
