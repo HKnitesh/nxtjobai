@@ -1,9 +1,14 @@
+"use client"
 import Image from 'next/image';
 import { MdNotifications } from "react-icons/md";
 import Menu from './Menu';
 import Link from 'next/link';
 import User from '../components/User';
 import CoverLetter from '../components/CoverLetter';
+
+const imageLoader02 = ({ src, width, quality }) => {
+    return `https://res.cloudinary.com/drw8eqw3i/image/upload/v1687488875/${src}?w=${width}&q=${quality || 75}`
+}
 
 export default function Header() {
     return (
@@ -14,8 +19,8 @@ export default function Header() {
                     {/* logo div */}
                     <Link href="/" className="h-full w-[139px] flex-none order-0 grow-0">
                         <Image
-                            priority
-                            src="/v1687488875/Group1784_sxi8of.png"
+                            loader={imageLoader02}
+                            src="Group1784_sxi8of.png"
                             width={139}
                             height={48}
                             alt="company logo"

@@ -1,7 +1,12 @@
+'use client'
 import Image from 'next/image';
 import { MdOutlineHomeWork } from "react-icons/md";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoDocumentAttach, IoDocumentText, IoChatbubblesSharp } from "react-icons/io5";
+
+const imageLoader = ({ src, width, quality }) => {
+    return `https://res.cloudinary.com/drw8eqw3i/image/upload/v1687488875/${src}?w=${width}&q=${quality || 75}`
+}
 
 export default function JobCard() {
     return (
@@ -9,9 +14,9 @@ export default function JobCard() {
             <div className="flex flex-row w-64 items-start justify-between p-0 gap-2 isolate self-stretch ">
                 <div className="flex flex-row items-center p-0 gap-2.5 ">
                     <Image
-                        priority
+                        loader={imageLoader}
                         className='rounded-sm'
-                        src="/v1687488875/Rectangle4913_sqbbcb.png"
+                        src="Rectangle4913_sqbbcb.png"
                         width={24}
                         height={24}
                         alt="card img"
