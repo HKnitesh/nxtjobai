@@ -3,6 +3,7 @@
 const nextConfig = {
     trailingSlash: true,
     images: {
+        output: 'export',
         remotePatterns: [
             {
                 protocol: 'https',
@@ -11,7 +12,6 @@ const nextConfig = {
                 pathname: '/drw8eqw3i/image/upload/**',
             },
         ],
-        output: 'export',
     },
 }
 
