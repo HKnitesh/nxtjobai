@@ -4,14 +4,8 @@ const nextConfig = {
     trailingSlash: true,
     output: 'export',
     images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'res.cloudinary.com',
-                port: '',
-                pathname: '/drw8eqw3i/image/upload/**',
-            },
-        ],
+        unoptimized: true,
+        domains: ["res.cloudinary.com"],
     },
 }
 

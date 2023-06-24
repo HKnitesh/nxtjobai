@@ -10,9 +10,6 @@ import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { BiCaretDown } from "react-icons/bi";
 import { IoDocumentAttach, IoDocumentText, IoChatbubblesSharp } from "react-icons/io5";
 
-const imageLoader = ({ src, width, quality }) => {
-    return `https://res.cloudinary.com/drw8eqw3i/image/upload/v1687488876/${src}?w=${width}&q=${quality || 75}`
-}
 
 export default function Boards() {
     return (
@@ -37,8 +34,7 @@ export default function Boards() {
                     <div className='flex flex-row justify-between items-start gap-2.5 w-full h-[72px] max-h-[800px] pb-10 bottom-5'>
                         <div className='flex flex-row items-start  absolute gap-2.5 h-[72px] left-6'>
                             <Image
-                                loader={imageLoader}
-                                src='companylogo_mrpni8.png'
+                                src='https://res.cloudinary.com/drw8eqw3i/image/upload/v1687488876/companylogo_mrpni8.png'
                                 alt='logo'
                                 height={72}
                                 width={72}
