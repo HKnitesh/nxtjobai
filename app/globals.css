@@ -16,8 +16,20 @@
 .button{
   @apply flex justify-center items-center px-4 h-12 w-40 rounded-lg bg-[#8246FD] text-whiteF font-inter text-sm font-semibold;
 }
+.big-btn{
+  @apply rounded-lg bg-[#57A4F2] text-whiteF font-inter font-bold text-sm items-center justify-center py-2.5 px-8 self-stretch;
+}
 .input{
   @apply items-center px-4 h-12 text-sm border-[1px] border-solid border-[#DDDDDD] rounded-lg;
+}
+.compButton{
+  @apply flex flex-row items-center gap-2.5 py-1.5 px-2.5 rounded-lg hover:bg-[#F7F3FF] text-[#5A5A5A] hover:text-[#8246fD] w-48;
+}
+.navMenu{
+  @apply flex flex-col h-full items-start font-inter p-5 gap-5 bg-[#F7F3FF] rounded-lg max-w-[650px] w-3/4 overflow-y-scroll;
+}
+.fellowUp{
+  @apply flex justify-between py-2.5 px-5 items-center self-stretch rounded-lg bg-whiteF text-gray50 font-inter;
 }
 
 @tailwind utilities;

@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Link from 'next/link';
 import User from '../components/User';
 import CoverLetter from '../components/CoverLetter';
+import Interview from '../components/Interview';
 
 
 export default function Header() {
@@ -26,10 +27,13 @@ export default function Header() {
                     {/* menu div */}
                     <div className='w-[942px] h-11 flex flex-row items-center gap-[10px] p-0 top-[2px] left-44 '>
                         <Menu title="Resume Builder" />
-                        {/* <Menu title="Cover Letter" /> */}
-                        <CoverLetter />
+                        
+                        <CoverLetter title="Cover Letter" placeholder="Cover Letter Name"/>
+
                         <Menu title="LinkedIn Review" />
-                        <Menu title="Interview" />
+
+                        <Interview title="Mock Interview" placeholder="Mock Interview Name"/>
+                        {/* <Menu title="Interview" /> */}
                         <Menu title="Job Tracker & Networking" className="text-[#8246FD] bg-[#F7F3FF] font-semibold" />
                     </div>
                 </div>

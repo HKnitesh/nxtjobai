@@ -1,4 +1,4 @@
-import { BsGridFill } from "react-icons/bs";
+
 import { MdGroups2, MdBugReport } from "react-icons/md";
 import { TiArrowLoop } from "react-icons/ti";
 import { HiLightBulb } from "react-icons/hi";
@@ -11,8 +11,6 @@ export default function SideBar() {
     return (
         <div className="flex flex-col absolute px-5 py-3 gap-[10px] top-[120px] left-8 rounded-xl bg-whiteF">
             <Boards />
-           
-
 
             <Link className="sideBar" href="/">
                 <MdGroups2 className="text-3xl" />
@@ -39,10 +37,6 @@ export default function SideBar() {
                 <MdBugReport className="text-3xl" />
                 <div className="font-inter font-semibold text-base">Report an Issue</div>
             </Link>
-
-
-
-
         </div>
     );
 }

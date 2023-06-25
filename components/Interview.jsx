@@ -3,7 +3,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 
-export default function CoverLetter({ title, placeholder }) {
+export default function Interview({ title, placeholder }) {
 
     return (
 
