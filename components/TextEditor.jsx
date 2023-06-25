@@ -12,8 +12,7 @@ export default function TextEditor() {
     return (
         <>
             <Editor
-                className='text-[#8246FD]'
-                apiKey='pm5wcxztqw6crb0ykc6x9xifz9bikpt2r38f6l9zq5v1pr3z'
+                // apiKey={process.env.API_KEY}
                 onInit={(evt, editor) => editorRef.current = editor}
                 initialValue="<p>Are you passionate about UI/UX design and eager to gain hands-on experience working with a prestigious Management Consulting firm? TalentKompass
                                 Deutschland, a top Human Resources company based in Germany, is searching for a motivated UI/UX Design Intern to join our esteemed client. This remote
